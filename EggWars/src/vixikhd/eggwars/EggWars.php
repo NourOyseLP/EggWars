@@ -395,8 +395,8 @@ class EggWars extends PluginBase implements Listener, IngotGeneratorData {
      * @param BlockPlaceEvent $event
      */
     public function onPlace(BlockPlaceEvent $event) {
-        if($event->getBlock()->getId() == Block::DRAGON_EGG) {
-            $event->getBlock()->getLevel()->setBlock($event->getBlock(), Block::get(Block::DRAGON_EGG));
+        if($event->getBlock()->getId() == Block::GLOWSTONE) {
+            $event->getBlock()->getLevel()->setBlock($event->getBlock(), Block::get(Block::GLOWSTONE));
         }
     }
 
