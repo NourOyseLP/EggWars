@@ -214,7 +214,7 @@ class Arena implements Listener {
         $player = $event->getPlayer();
 
         if($this->inGame($player) && $this->phase === self::PHASE_GAME) {
-            if($event->getBlock()->getId() == Block::DRAGON_EGG) {
+            if($event->getBlock()->getId() == Block::GLOWSTONE) {
                 $team = "";
                 foreach ($this->levelManager->getLevelData()["teams"] as $t => ["egg" => $pos]) {
                     if(($v = new Vector3($pos[0], $pos[1], $pos[2]))->ceil()->equals($n = $event->getBlock()->ceil())) {
